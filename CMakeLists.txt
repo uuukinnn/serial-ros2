@@ -46,6 +46,8 @@ target_include_directories(${PROJECT_NAME} PRIVATE include)
 # add_dependencies(serial_example ${PROJECT_NAME})
 # target_link_libraries(serial_example ${PROJECT_NAME})
 
+target_compile_options(${PROJECT_NAME} PRIVATE -fPIC)
+
 
 ## Install executable
 install(TARGETS ${PROJECT_NAME}
@@ -59,8 +61,8 @@ install(FILES include/serial/serial.h include/serial/v8stdint.h
 )
 
 ## Tests
-#if(BUILD_TESTING)
+# if(BUILD_TESTING)
 #    add_subdirectory(tests)
-#endif()
+# endif()
 
 ament_package()

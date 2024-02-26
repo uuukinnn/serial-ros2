@@ -21,6 +21,7 @@
 
 #if defined(__linux__)
 # include <linux/serial.h>
+# include <iostream>
 #endif
 
 #include <sys/select.h>
