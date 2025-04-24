@@ -8,7 +8,7 @@ ament_export_libraries(${PROJECT_NAME})
 
 ## Sources
 ## Add serial library
-add_library(${PROJECT_NAME}
+add_library(${PROJECT_NAME} SHARED
     src/serial.cc
     include/serial/serial.h
     include/serial/v8stdint.h
